@@ -1,0 +1,152 @@
+/* style.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+  
+header {
+    background: #2e8b57;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+  
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+  
+section {
+    margin-bottom: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+  
+#inicio {
+    text-align: center;
+}
+  
+#inicio img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+  
+.proyecto img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+  
+.habilidades {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+  
+.habilidades li {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+form label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+  
+form input,
+form textarea {
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+  
+form button {
+    margin-top: 1.5rem;
+    padding: 0.7rem;
+    background: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+  
+form button:hover {
+    background: #246b45;
+}
+  
+footer {
+    background: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+  
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .habilidades {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 0.9rem;
+    }
+  
+    header, footer {
+      padding: 0.5rem;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+}
+                    
